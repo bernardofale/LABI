@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="images/potatoes.jpg" rel="shortcut icon">
+    <title>Images | Potato Images</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+    <link href="css/slider.css" rel="stylesheet">
+    <link href ="css/galley.css" rel="stylesheet">
+
+
+</head>
+
+<body style= "background-color:#e8e8e8">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <a class="navbar-brand" href="index">Potato Images</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="index">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="page2">Images
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page3">New Image</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page4">RGB Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page5">About</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+            <div class="row">
+            <div class="col-lg-12 text-center">
+                <div>
+                    <p>
+                    <h1 class="display-3">Images</h1>
+                    <p>Here you can see every image on the database, depending on the level of confidence you choose in the slider!</p>
+                    <div class="container">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                        <p style="color:#131313">Confidence: <span id="demo"></span></p>
+                    </div>
+                    <script>
+                        var slider = document.getElementById("myRange");
+                        var output = document.getElementById("demo");
+                        output.innerHTML = slider.value;
+
+                        slider.oninput = function() {
+                        output.innerHTML = this.value;
+                        }
+                    </script>
+                    </div>
+
+                    <div class="gallery">
+                        <a target="_blank" href="jpg"></a>
+                        <div class="desc"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer mt-auto py-1 bg-dark fixed-bottom">
+  		<div class="container-fluid text-center">
+  			<span class="text-muted">Potato Images
+  			</br>LABI - UA - 2019
+  			</span>
+  		</div>
+  	</footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/vendor/jquery.slim.min.js"></script>
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

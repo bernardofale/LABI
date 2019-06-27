@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link href="images/potatoes.jpg" rel="shortcut icon">
+  <title>RGB Search | Potato Images</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body style= "background-color:#e8e8e8">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="index">Potato Images</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page2">Images</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page3">New image</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="page4">RGB Search
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page5">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-12 text-center">
+        <p></p>
+        <h1 class="display-3">RGB Search</h1>
+        <p>Here you can search the image you want, by searching the object and the dominant color in it!</p>
+        <div class="container">
+          <div class="row  justify-content-center">
+            <form class="form-inline mt-5" action="/list/?type=detected" method="post" enctype="multipart/form-data">
+              <input class="form-control mr-sm-3" type="text" name="name" placeholder="Name" aria-label="Nome">
+              <input class="form-control mr-sm-3" type="text" name="color" placeholder="Color" accept="vermelho, verde, azul, Vermelho, Verde, Azul, Red, Green, Blue, red, green, blue" aria-label="Color">
+              <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer mt-auto py-1 bg-dark fixed-bottom">
+		<div class="container-fluid text-center">
+			<span class="text-muted">Potato Images
+			</br>LABI - UA - 2019
+			</span>
+		</div>
+	</footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="js/vendor/jquery.slim.min.js"></script>
+  <script src="js/vendor/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
